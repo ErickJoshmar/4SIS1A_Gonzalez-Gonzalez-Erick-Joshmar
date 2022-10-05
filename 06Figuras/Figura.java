@@ -13,7 +13,7 @@ public class Figura {
     //objeto
     Scanner entrada = new Scanner(System.in);
 
-    //metodos
+    //metodos 
 
     public void menu(){
         /**
@@ -171,7 +171,7 @@ public class Figura {
             System.out.println("Ingrese la altura");
             altura = entrada.nextDouble();
 
-            perimetro = base*altura;
+            perimetro = base+altura+base+altura;
             System.out.println("El perimetro del rectangulo es: " + perimetro);
             break;
             default:
