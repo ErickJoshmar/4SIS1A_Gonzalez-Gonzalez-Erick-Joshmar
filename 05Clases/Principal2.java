@@ -1,4 +1,4 @@
-public class Principal {
+public class Principal2 {
 //metodo principal
 public static void main(String[] args){
 //Vamos a crear una instancia 
