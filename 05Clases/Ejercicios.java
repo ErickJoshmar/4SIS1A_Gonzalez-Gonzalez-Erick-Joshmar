@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-class Ejercicios {
+class Ejercicios{
+
 
 /** Vamos a hacer una calculadora, un conversor de unicsdes creación de cuadros y de movimiento */
 
@@ -76,7 +77,7 @@ do{
     System.out.println("Para detener la multiplicacion ingrese el numero 0");
     System.out.println("Escriba los numeros a multiplicar");
     num1 = entrada.nextDouble();
-    multi += num1;
+    multi *= num1;
     // multi = multi + num1;
 
 }while(num1 != 0);
@@ -84,6 +85,21 @@ System.out.println("El resultado es: " + multi);
 
 case 'c':
 //division 
+try{
+float num2,num3,resultado;
+
+System.out.println("Ingrese el dividendo (Numero de adentro)");
+num2 = entrada.nextFloat();
+
+System.out.println("Ingrese el divisor (Numero de afuera)");
+num3 = entrada.nextFloat();
+
+resultado = num2/num3;
+System.out.println("La division es " + num2 + "/" + num3 + "=" + resultado );
+}catch(ArithmeticException ae){
+    System.out.println("¡¡¡No se puede dividir entre cero!!!");
+}
+
 break;
 
 case 'd':
@@ -154,7 +170,7 @@ System.out.println("Opcion no valida");
 
 } 
 public void Ejercicio3() {
-    double n1;
+
 /*
  * Deben de ingresar un numero de * / para que se arme un cadrado por ejemplo de poder aceptar del 1 al 1000 
  *      ***********
@@ -164,10 +180,8 @@ public void Ejercicio3() {
         **********
         //////////
 */
-
-} 
-
-
+}
+        
 public void Ejercicio4() {
 
 } 
