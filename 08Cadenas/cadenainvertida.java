@@ -11,7 +11,7 @@ public class cadenainvertida {
         for (int i = cadena.length()-1; i>=0; i--){
         //obtener las posiciones de los char
         char car = cadena.charAt(i);
-        //lo concateno
+        //lo concateno.
 
         invertida += car;
         }

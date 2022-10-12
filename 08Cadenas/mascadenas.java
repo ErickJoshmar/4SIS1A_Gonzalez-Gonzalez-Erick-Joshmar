@@ -12,7 +12,7 @@ public class mascadenas {
      //vamos a concatenar 
 
      String salida = "Cadenas: " + s1 + "\n" + s2 + "\n" + s3 + "\n"+ s4 + "\n";
-     // probar la igual de una cadena 
+     // probar la igual de una cadena .
      if(s1.equals("Solo es un juguito contigo")) {
          //si es verdad 
 

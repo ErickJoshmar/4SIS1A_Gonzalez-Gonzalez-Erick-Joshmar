@@ -39,7 +39,7 @@ public class cadena {
         System.out.println("El valor es de : "+ s3 + "como cadena");
         /*
          * 2+2 0 22 cadena 
-         * 2 + 2= 4 int
+         * 2 + 2= 4 int.
          */
         // de cadena a numero
         
