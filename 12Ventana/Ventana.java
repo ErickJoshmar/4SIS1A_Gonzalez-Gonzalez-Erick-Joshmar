@@ -1,3 +1,4 @@
+//Explicacion ventana
 import javax.swing.*;
 public class Ventana{
     public static void main (String[] args){
