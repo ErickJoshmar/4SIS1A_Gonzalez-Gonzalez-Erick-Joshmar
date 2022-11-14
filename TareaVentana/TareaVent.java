@@ -30,6 +30,9 @@ public class TareaVent extends JFrame {
         this.getContentPane().add(mainPanel);
     }
 
+    /**
+     * 
+     */
     private void colocarBotones() {
 
         userBox = new JTextField();
@@ -47,40 +50,42 @@ public class TareaVent extends JFrame {
         mainPanel.add(registroButton);
 
      
+    }
 
-        JButton loginButton = new JButton("Iniciar Sesion");
-        loginButton.setBounds(10, 80, 120, 25);
-        mainPanel.add(loginButton);
+    JButton loginButton = new JButton("iniciar Sesion");
+    loginButton.setBackground(Color.white);
+    loginButton.setBounds(10, 80, 120, 25);
+    mainPanel.add(loginButton);
 
-        ActionListener userLoginButton = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                String usuarioUser = "Joshmar";
-                String usuarioPass = "Gonzalez";
-
-                if (usuarioUser.equals(userBox.getText())) {
-                    String contrasena = "";
-
-                    for (int i = 0; i < passBox.getPassword().length; i++) {
-                        contrasena += passBox.getPassword()[i];
-                    }
-
-                    if (usuarioPass.equals(contrasena)) {
-                        JOptionPane.showMessageDialog(null, "Bienvenido");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Error, contraseña incorrecta");
-                    }
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "El usuario ingresado no existe, ingrese el correcto");
-                }
-
-
+    ActionListener userLoginButton = (ActionEvent e) -> {
+        String usuarioUser = "Luis";
+        String usuarioPass = "Supercapiron";
+        
+        if (usuarioUser.equals(userBox.getText())) {
+            String contrasena = "";
+            
+            for (int i = 0; i < passBox.getPassword().length; i++) {
+                contrasena += passBox.getPassword()[i];
             }
-        };
+            
+            if (usuarioPass.equals(contrasena)) {
+                JOptionPane.showMessageDialog(null, "Bienvenido");
+                
+            } else {
+                JOptionPane.showMessageDialog(null, "Error, contraseña incorrecta");
+            }
+            
+        } else {
+            JOptionPane.showMessageDialog(null, "¿ Y tú quien eres?");
+        }
+    };
 
-        loginButton.addActionListener(userLoginButton);
+    loginButton.addActionListener(userLoginButton);
+    @Override
+    public String toString() {
+        return "TareaVent [mainPanel=" + mainPanel + ", userBox=" + userBox + ", passBox=" + passBox + ", loginButton="
+                + loginButton + ", userLoginButton=" + userLoginButton + "]";
+    }
     }
 
     private void colocarEtiquetas() {
